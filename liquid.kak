@@ -39,7 +39,7 @@ add-highlighter shared/liquid/single_string region "'"    (?<!\\)(\\\\)*' fill s
 add-highlighter shared/liquid/code/ regex \b(false|true)\b 0:value
 add-highlighter shared/liquid/code/ regex "(\b|-)[0-9]*\.?[0-9]+\b" 0:value
 
-add-highlighter shared/liquid/code/ regex \b(or|and|contains|for|in|if|elsif|else|endif|case|endcase|when|unless|endunless|for|break|continue|cycle|tablerow|endfor|echo|include|form|endform|liquid|paginate|endpaginate|raw|render|section|style|endstyle|javascript|endjavascript|stylesheet|endstylesheet|schema|endschema|assign|capture|increment|decrement|comment|endcomment)\b 0:keyword
+add-highlighter shared/liquid/code/ regex \b(or|and|contains|for|in|if|elsif|else|endif|case|endcase|when|unless|endunless|for|break|continue|cycle|tablerow|endfor|echo|include|form|endform|liquid|paginate|endpaginate|raw|endraw|render|section|style|endstyle|javascript|endjavascript|stylesheet|endstylesheet|schema|endschema|assign|capture|endcapture|increment|decrement|comment|endcomment)\b 0:keyword
 add-highlighter shared/liquid/code/ regex \b\w+: 0:keyword
 
 # Highlighter for html with liquid tags in it, i.e. the structure of conventional liquid files
